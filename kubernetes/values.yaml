@@ -17,7 +17,7 @@ backend:
       value: mongodb+srv://duonghung171204sd:Duonghung171204@cluster0.aip6ceg.mongodb.net
 
 admin:
-  image: duonghung171204/vuonlanho-admin-v1.0.1
+  image: duonghung171204/vuonlanho-admin:v1.0.1
   port: 80
 
 mongodb:
