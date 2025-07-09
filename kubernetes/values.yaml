@@ -1,0 +1,26 @@
+replicaCount: 1
+
+apiGateway:
+  image: duonghung171204/api-gateway-v1
+  port: 8000
+
+frontend:
+  image: duonghung171204/vuonlanho-frontend
+  tag: v1.0.12
+  port: 80
+
+backend:
+  image: duonghung171204/vuonlanho-backend-v1.0.0
+  port: 4000
+  env:
+    - name: MONGO_URI
+      value: mongodb+srv://duonghung171204sd:Duonghung171204@cluster0.aip6ceg.mongodb.net
+
+admin:
+  image: duonghung171204/vuonlanho-admin-v1.0.1
+  port: 80
+
+mongodb:
+  image: mongo:latest
+  port: 27017
+  storage: 5Gi
