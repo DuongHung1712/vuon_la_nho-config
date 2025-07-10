@@ -5,7 +5,7 @@ apiGateway:
   port: 8000
 
 frontend:
-  image: duonghung171204/vuonlanho-frontend:v1.0.0-09072025-06-50-53
+  image: duonghung171204/vuonlanho-frontend:v1.0.1-10072025-07-12-25
   port: 80
 
 backend:
