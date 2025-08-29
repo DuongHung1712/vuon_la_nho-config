@@ -5,18 +5,18 @@ apiGateway:
   port: 8000
 
 frontend:
-  image: duonghung171204/vuonlanho-frontend:v1.0.20
+  image: duonghung171204/vuonlanho-frontend:v1.0.2-10072025-08-29-25
   port: 80
 
 backend:
-  image: duonghung171204/vuonlanho-backend-v1.0.0
+  image: duonghung171204/vuonlanho-backend:v1.0.1-10072025-07-12-25
   port: 4000
   env:
     - name: MONGO_URI
       value: mongodb+srv://duonghung171204sd:Duonghung171204@cluster0.aip6ceg.mongodb.net
 
 admin:
-  image: duonghung171204/vuonlanho-admin:v1.0.1
+  image: duonghung171204/vuonlanho-admin:v1.0.2-10072025-08-29-25
   port: 80
 
 mongodb:

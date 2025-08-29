@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: vuonlanho-ingress
-  namespace: default   
+  namespace: production   
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
@@ -11,7 +11,7 @@ spec:
   tls:
     - hosts:
         - vuonlanho.store
-      secretName: vuonlanho-tls
+      secretName: frontend-tls
   rules:
     - host: vuonlanho.store
       http:

@@ -8,4 +8,4 @@ spec:
   ports:
     - port: {{ .Values.admin.port }}
       targetPort: {{ .Values.admin.port }}
-  type: LoadBalancer
+  type: ClusterIP
