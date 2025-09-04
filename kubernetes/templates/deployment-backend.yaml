@@ -21,4 +21,8 @@ spec:
             {{- range .Values.backend.env }}
             - name: {{ .name }}
               value: "{{ .value }}"
+              {{- else if .valueFrom }}
+              valueFrom:
+                {{- toYaml .valueFrom | nindent 6 }}
+              {{- end }}
             {{- end }}
