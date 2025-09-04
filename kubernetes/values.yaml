@@ -12,7 +12,7 @@ backend:
   image: duonghung171204/vuonlanho-backend:v1.0.2-04092025-08-16-11
   port: 4000
   env:
-    - name: MONGO_URI
+    - name: MONGODB_URI
       valueFrom:
         secretKeyRef:
           name: mongo-secret
