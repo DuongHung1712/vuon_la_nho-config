@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend
+  namespace: production
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
@@ -24,6 +25,6 @@ spec:
               value: "{{ .value }}"
               {{- else if .valueFrom }}
               valueFrom:
-                {{- toYaml .valueFrom | nindent 6 }}
+                {{- toYaml .valueFrom | nindent 16 }}
               {{- end }}
             {{- end }}
