@@ -20,6 +20,7 @@ spec:
           env:
             {{- range .Values.backend.env }}
             - name: {{ .name }}
+              {{- if .value }}
               value: "{{ .value }}"
               {{- else if .valueFrom }}
               valueFrom:
