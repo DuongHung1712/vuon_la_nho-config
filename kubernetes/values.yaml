@@ -16,7 +16,7 @@ backend:
       valueFrom:
         secretKeyRef:
           name: mongo-secret
-          key: MONGO_URI
+          key: MONGODB_URI
 
 admin:
   image: duonghung171204/vuonlanho-admin:v1.0.2-29082025-09-54-10
