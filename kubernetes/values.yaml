@@ -9,7 +9,7 @@ frontend:
   port: 80
 
 backend:
-  image: duonghung171204/vuonlanho-backend:v1.0.5-05092025-09-36-24
+  image: duonghung171204/vuonlanho-backend:v1.0.6-05092025-10-13-27
   port: 4000
   env:
     - name: MONGODB_URI
