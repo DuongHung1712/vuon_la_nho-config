@@ -42,16 +42,16 @@ backend:
         secretKeyRef:
           name: jwt-secret
           key: JWT_SECRET
-    - name: ADMIN_USER
+    - name: ADMIN_EMAIL
       valueFrom:
         secretKeyRef:
           name: admin-secret
-          key: ADMIN_USER
-    - name: ADMIN_PASS
+          key: ADMIN_EMAIL
+    - name: ADMIN_PASSWORD
       valueFrom:
         secretKeyRef:
           name: admin-secret
-          key: ADMIN_PASS
+          key: ADMIN_PASSWORD
 admin:
   image: duonghung171204/vuonlanho-admin:v1.0.2-29082025-09-54-10
   port: 80
